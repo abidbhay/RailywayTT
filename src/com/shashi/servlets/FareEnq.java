@@ -48,7 +48,7 @@ public class FareEnq extends HttpServlet {
 					pw.println("" + "<tr><td>" + train.getTr_name() + "</td>" + "<td>" + train.getTr_no() + "</td>"
 							+ "<td>" + train.getFrom_stn() + "</td>" + "<td>" + train.getTo_stn() + "</td>" + "<td>"
 							+ time + "</td>" + "<td>" + train.getSeats() + "</td>" + "<td>" + train.getFare()
-							+ " RS</td><td><a href='booktrainbyref?trainNo=" + train.getTr_no() + "&fromStn="
+							+ " TAKA</td><td><a href='booktrainbyref?trainNo=" + train.getTr_no() + "&fromStn="
 							+ train.getFrom_stn() + "&toStn=" + train.getTo_stn()
 							+ "'><div class='red'>Book Now</div></a></td>" + "</tr>");
 				}
