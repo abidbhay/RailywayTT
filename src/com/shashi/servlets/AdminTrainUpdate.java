@@ -41,7 +41,7 @@ public class AdminTrainUpdate extends HttpServlet {
 				pw.println("<div class='tab'>Metro Schedule Update</div>");
 				pw.println("<div class='tab'>" + "<table><form action='updatetrainschedule' method='post'>"
 						+ "<tr><td>Train No :</td><td><input type='text' name='trainno' value='" + train.getTr_no()
-						+ "'></td></tr>" + "<tr><td>Train Name :</td><td><input type='text' name='trainname' value='"
+						+ "'></td></tr>" + "<tr><td>Metro Name :</td><td><input type='text' name='trainname' value='"
 						+ train.getTr_name() + "'></td></tr>"
 						+ "<tr><td>From Station :</td><td><input type='text' name='fromstation' value='"
 						+ train.getFrom_stn() + "'></td></tr>"
@@ -49,9 +49,9 @@ public class AdminTrainUpdate extends HttpServlet {
 						+ "'></td></tr>"
 						+ "<tr><td>Available seats:</td><td><input type='text' name='available' value='"
 						+ train.getSeats() + "'></td></tr>"
-						+ "<tr><td>Fare (INR) :</td><td><input type='text' name='fare' value='" + train.getFare()
+						+ "<tr><td>Fare (BDT) :</td><td><input type='text' name='fare' value='" + train.getFare()
 						+ "'></td></tr>"
-						+ "<tr><td></td><td><input type='submit' name='submit' value='Update Train Schedule'></td></tr>"
+						+ "<tr><td></td><td><input type='submit' name='submit' value='Update Metro Schedule'></td></tr>"
 						+ "</form></table>" + "</div>");
 			} else {
 				RequestDispatcher rd = req.getRequestDispatcher("AdminUpdateTrain.html");
