@@ -62,12 +62,12 @@ INSERT INTO RESERVATION.CUSTOMER VALUES('abid@demo.com','Abid','Abid','Reza','Dh
 INSERT INTO RESERVATION.CUSTOMER VALUES('Tanzim@demo.com','Tanzim','Tanzim','Hossain','Dhaka, Mirpur',954745223);
 INSERT INTO RESERVATION.CUSTOMER VALUES('Golam@demo.com','Golam','Dastagir','Barish','Dhaka, Mirpur',954745219);
 
-INSERT INTO RESERVATION.TRAIN VALUES(10001,'Jamalpur Express','Dhaka','Jamalpur', 152, 490.50);
-INSERT INTO RESERVATION.TRAIN VALUES(10002,'Chattala Express','Chittagong','Dhaka', 52, 550.50);
-INSERT INTO RESERVATION.TRAIN VALUES(10003,'Suborno Express','Chittagong','Dhaka', 92, 451);
-INSERT INTO RESERVATION.TRAIN VALUES(10004,'Tista Express','Dhaka','Dewanganj', 182, 550);
-INSERT INTO RESERVATION.TRAIN VALUES(10005,'Upakul Express','Noahkhali','Dhaka', 12, 500);
-INSERT INTO RESERVATION.TRAIN VALUES(10006,'Karatoya Express','Santahar','Burimari', 123, 145.75);
+INSERT INTO RESERVATION.TRAIN VALUES(10001,'Podma Express','Mirpur-2','Moahkhali', 152, 30);
+INSERT INTO RESERVATION.TRAIN VALUES(10002,'Jamuna Express','Dhanmmondi','Gulistan', 113, 550.50);
+INSERT INTO RESERVATION.TRAIN VALUES(10003,'Mao Express','Chittagong','Dhaka', 92, 80);
+INSERT INTO RESERVATION.TRAIN VALUES(10004,'Tista Express','Dhaka','Naranyangonj', 132, 70);
+INSERT INTO RESERVATION.TRAIN VALUES(10005,'Ken Express','Uttra Uttor','Kamlapur', 200, 150);
+INSERT INTO RESERVATION.TRAIN VALUES(10006,'Megna Express','Sarvar','Badda', 123, 110);
 
 
 COMMIT;
