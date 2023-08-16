@@ -34,9 +34,9 @@ public class TrainBwStn extends HttpServlet {
 			if (trains != null && !trains.isEmpty()) {
 				RequestDispatcher rd = req.getRequestDispatcher("UserHome.html");
 				rd.include(req, res);
-				pw.println("<div class='main'><p1 class='menu'>Trains BetWeen Station "
+				pw.println("<div class='main'><p1 class='menu'>Metros BetWeen Station "
 						+ req.getParameter("fromstation") + " and " + req.getParameter("tostation") + "</p1></div>");
-				pw.println("<div class='tab'><table><tr><th>Train Name</th><th>Train No</th>"
+				pw.println("<div class='tab'><table><tr><th>Metros Name</th><th>Train No</th>"
 						+ "<th>From Stn</th><th>To Stn</th><th>Time</th><th>Seats</th><th>Fare (INR)</th><th>Action</th></tr>");
 				for (TrainBean train : trains) {
 					int hr = (int) (Math.random() * 24);
@@ -54,7 +54,7 @@ public class TrainBwStn extends HttpServlet {
 			} else {
 				RequestDispatcher rd = req.getRequestDispatcher("TrainBwStn.html");
 				rd.include(req, res);
-				pw.println("<div class='tab'><p1 class='menu'>There are no trains Between "
+				pw.println("<div class='tab'><p1 class='menu'>There are no metros Between "
 						+ req.getParameter("fromstation") + " and " + req.getParameter("tostation") + "</p1></div>");
 			}
 		} catch (Exception e) {

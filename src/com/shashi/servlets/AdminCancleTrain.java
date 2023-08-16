@@ -43,12 +43,12 @@ public class AdminCancleTrain extends HttpServlet {
 			if (ResponseCode.SUCCESS.toString().equalsIgnoreCase(message)) {
 				RequestDispatcher rd = req.getRequestDispatcher("CancleTrain.html");
 				rd.include(req, res);
-				pw.println("<div class='main'><p1 class='menu'>Train number " + trainNo
+				pw.println("<div class='main'><p1 class='menu'>Metro number " + trainNo
 						+ " has been Deleted Successfully.</p1></div>");
 			} else {
 				RequestDispatcher rd = req.getRequestDispatcher("CancleTrain.html");
 				rd.include(req, res);
-				pw.println("<div class='tab'><p1 class='menu'>Train No." + trainNo + " is Not Available !</p1></div>");
+				pw.println("<div class='tab'><p1 class='menu'>Metro No." + trainNo + " is Not Available !</p1></div>");
 			}
 		} catch (Exception e) {
 			throw new TrainException(422, this.getClass().getName() + "_FAILED", e.getMessage());

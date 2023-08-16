@@ -33,9 +33,9 @@ public class AdminViewTrainFwd extends HttpServlet {
 			if (trains != null && !trains.isEmpty()) {
 				RequestDispatcher rd = req.getRequestDispatcher("ViewTrains.html");
 				rd.include(req, res);
-				pw.println("<div class='main'><p1 class='menu'>Running Trains</p1></div>");
-				pw.println("<div class='tab'><table><tr><th>Train Name</th><th>Train Number</th>"
-						+ "<th>From Station</th><th>To Station</th><th>Seats Available</th><th>Fare (INR)</th><th>Action</th></tr>");
+				pw.println("<div class='main'><p1 class='menu'>Running Metros</p1></div>");
+				pw.println("<div class='tab'><table><tr><th>Metro Name</th><th>Metro Number</th>"
+						+ "<th>From Station</th><th>To Station</th><th>Seats Available</th><th>Fare (BDT)</th><th>Action</th></tr>");
 
 				for (TrainBean train : trains) {
 
@@ -50,7 +50,7 @@ public class AdminViewTrainFwd extends HttpServlet {
 			} else {
 				RequestDispatcher rd = req.getRequestDispatcher("ViewTrains.html");
 				rd.include(req, res);
-				pw.println("<div class='main'><p1 class='menu red'> No Running Trains</p1></div>");
+				pw.println("<div class='main'><p1 class='menu red'> No Running Metros</p1></div>");
 			}
 		} catch (Exception e) {
 			throw new TrainException(422, this.getClass().getName() + "_FAILED", e.getMessage());

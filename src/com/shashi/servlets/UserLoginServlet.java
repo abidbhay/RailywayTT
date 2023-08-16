@@ -32,10 +32,10 @@ public class UserLoginServlet extends HttpServlet {
 			RequestDispatcher rd = req.getRequestDispatcher("UserHome.html");
 			rd.include(req, res);
 			pw.println("<div class='main'><p1 class='menu'>Hello " + uName
-					+ " ! Welcome to our new NITRTC Website</p1></div>");
+					+ " ! Welcome to our METROKOI Website</p1></div>");
 			pw.println("<div class='tab'>Hello " + uName
-					+ " ! Good to See You here.<br/> Here you can Check up the train "
-					+ "details and train schedule,fare Enquiry and many more information.<br/>Just go to the Side Menu Links and "
+					+ " ! Good to See You here.<br/> Here you can Check up the metros "
+					+ "details and metro schedule,fare Enquiry and many more information.<br/>Just go to the top Menu Links and "
 					+ "Explore the Advantages.<br/><br/>Thanks For Being Connected with us!" + "</div>");
 
 		} else {

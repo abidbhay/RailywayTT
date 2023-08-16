@@ -25,12 +25,12 @@ public class UserProfile extends HttpServlet {
 		RequestDispatcher rd = req.getRequestDispatcher("UserHome.html");
 		rd.include(req, res);
 		pw.println("<div class='tab'>" + "		<p1 class='menu'>" + "	Hello " + TrainUtil.getCurrentUserName(req)
-				+ " ! Welcome to our new NITRTC Website" + "		</p1>" + "	</div>");
+				+ " ! Welcome to our METROKOI Website" + "		</p1>" + "	</div>");
 		pw.println("<div class='main'><p1 class='menu'><a href='viewuserprofile'>View Profile</a></p1>&nbsp;"
 				+ "<p1 class='menu'><a href='edituserprofile'>Edit Profile</a></p1>&nbsp;"
 				+ "<p1 class='menu'><a href='changeuserpassword'>Change Password</a></p1>" + "</div>");
 		pw.println("<div class='tab yellow'>Hey ! " + TrainUtil.getCurrentUserName(req)
-				+ ",Welcome to NITRTC<br/><br/>Here You can Edit,View Your Profile and change your PassWord.<br/>"
+				+ ",Welcome to METROKOI<br/><br/>Here You can Edit,View Your Profile and change your PassWord.<br/>"
 				+ "<br/>Thanks For Being Connected With Us!" + "</div>");
 
 	}

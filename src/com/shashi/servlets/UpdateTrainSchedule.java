@@ -39,11 +39,11 @@ public class UpdateTrainSchedule extends HttpServlet {
 			if ("SUCCESS".equalsIgnoreCase(message)) {
 				RequestDispatcher rd = req.getRequestDispatcher("AdminUpdateTrain.html");
 				rd.include(req, res);
-				pw.println("<div class='tab'><p1 class='menu'>Train Updated Successfully!</p1></div>");
+				pw.println("<div class='tab'><p1 class='menu'>Metro Updated Successfully!</p1></div>");
 			} else {
 				RequestDispatcher rd = req.getRequestDispatcher("AdminUpdateTrain.html");
 				rd.include(req, res);
-				pw.println("<div class='tab'><p1 class='menu'>Error in filling the train Detail</p1></div>");
+				pw.println("<div class='tab'><p1 class='menu'>Error in filling the metro Detail</p1></div>");
 			}
 		} catch (Exception e) {
 			throw new TrainException(422, this.getClass().getName() + "_FAILED", e.getMessage());

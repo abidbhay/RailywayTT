@@ -33,9 +33,9 @@ public class UserViewTrainFwd extends HttpServlet {
 			if (trains != null && !trains.isEmpty()) {
 				RequestDispatcher rd = req.getRequestDispatcher("UserViewTrains.html");
 				rd.include(req, res);
-				pw.println("<div class='main'><p1 class='menu'>Running Trains</p1></div>");
-				pw.println("<div class='tab'><table><tr><th>Train Name</th><th>Train Number</th>"
-						+ "<th>From Station</th><th>To Station</th><th>Time</th><th>Seats Available</th><th>Fare (INR)</th><th>Booking</th></tr>");
+				pw.println("<div class='main'><p1 class='menu'>Running Metros</p1></div>");
+				pw.println("<div class='tab'><table><tr><th>Train Name</th><th>Metro Number</th>"
+						+ "<th>From Station</th><th>To Station</th><th>Time</th><th>Seats Available</th><th>Fare (BDT)</th><th>Booking</th></tr>");
 
 				for (TrainBean train : trains) {
 					int hr = (int) (Math.random() * 24);
@@ -45,7 +45,7 @@ public class UserViewTrainFwd extends HttpServlet {
 							+ train.getFrom_stn() + "&toStn=" + train.getTo_stn() + "'>" + train.getTr_name()
 							+ "</a></td>" + "<td>" + train.getTr_no() + "</td>" + "<td>" + train.getFrom_stn() + "</td>"
 							+ "<td>" + train.getTo_stn() + "</td>" + "<td>" + time + "</td>" + "<td>" + train.getSeats()
-							+ "</td>" + "<td>" + train.getFare() + " RS</td>" + "<td><a href='booktrainbyref?trainNo="
+							+ "</td>" + "<td>" + train.getFare() + " TAKA</td>" + "<td><a href='booktrainbyref?trainNo="
 							+ train.getTr_no() + "&fromStn=" + train.getFrom_stn() + "&toStn=" + train.getTo_stn()
 							+ "'><div class='red'>Book Now</div></a></td></tr>");
 				}
@@ -53,7 +53,7 @@ public class UserViewTrainFwd extends HttpServlet {
 			} else {
 				RequestDispatcher rd = req.getRequestDispatcher("UserViewTrains.html");
 				rd.include(req, res);
-				pw.println("<div class='main'><p1 class='menu red'> No Running Trains</p1></div>");
+				pw.println("<div class='main'><p1 class='menu red'> No Running Metros</p1></div>");
 			}
 		} catch (Exception e) {
 			throw new TrainException(422, this.getClass().getName() + "_FAILED", e.getMessage());

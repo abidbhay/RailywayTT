@@ -51,7 +51,7 @@ public class AdminAddTrain extends HttpServlet {
 			if (ResponseCode.SUCCESS.toString().equalsIgnoreCase(message)) {
 				RequestDispatcher rd = req.getRequestDispatcher("AddTrains.html");
 				rd.include(req, res);
-				pw.println("<div class='tab'><p1 class='menu'>Train Added Successfully!</p1></div>");
+				pw.println("<div class='tab'><p1 class='menu'>Metro Added Successfully!</p1></div>");
 			} else {
 				RequestDispatcher rd = req.getRequestDispatcher("AddTrains.html");
 				rd.include(req, res);

@@ -86,8 +86,8 @@ public class BookTrains extends HttpServlet {
 								+ transaction.getTransId() + "</p>" + "</div>");
 						pw.println("<div class='tab'>" + "<p class='menu'>" + "<table>"
 								+ "<tr><td>PNR No: </td><td colspan='3' style='color:blue;'>" + transaction.getTransId()
-								+ "</td></tr><tr><td>Train Name: </td><td>" + train.getTr_name()
-								+ "</td><td>Train No: </td><td>" + transaction.getTr_no()
+								+ "</td></tr><tr><td>Metro Name: </td><td>" + train.getTr_name()
+								+ "</td><td>Metro No: </td><td>" + transaction.getTr_no()
 								+ "</td></tr><tr><td>Booked From: </td><td>" + transaction.getFrom_stn()
 								+ "</td><td>To Station: </td><td>" + transaction.getTo_stn() + "</td></tr>"
 								+ "<tr><td>Date Of Journey:</td><td>" + transaction.getDate()
@@ -103,7 +103,7 @@ public class BookTrains extends HttpServlet {
 					}
 				}
 			} else {
-				pw.println("<div class='tab'><p1 class='menu'>Invalid Train Number !</p1></div>");
+				pw.println("<div class='tab'><p1 class='menu'>Invalid Metro Number !</p1></div>");
 
 			}
 

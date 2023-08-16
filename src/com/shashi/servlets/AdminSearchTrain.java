@@ -46,12 +46,12 @@ public class AdminSearchTrain extends HttpServlet {
 						+ train.getTr_no() + "</td></tr>" + "<tr><td class='blue'>From Station :</td><td>"
 						+ train.getFrom_stn() + "</td></tr>" + "<tr><td class='blue'>To Station :</td><td>"
 						+ train.getTo_stn() + "</td></tr>" + "<tr><td class='blue'>Available Seats:</td><td>"
-						+ train.getSeats() + "</td></tr>" + "<tr><td class='blue'>Fare (INR) :</td><td>"
-						+ train.getFare() + " RS</td></tr>" + "</table>" + "</div>");
+						+ train.getSeats() + "</td></tr>" + "<tr><td class='blue'>Fare (BDT) :</td><td>"
+						+ train.getFare() + " TAKA</td></tr>" + "</table>" + "</div>");
 			} else {
 				RequestDispatcher rd = req.getRequestDispatcher("AdminSearchTrain.html");
 				rd.include(req, res);
-				pw.println("<div class='tab'><p1 class='menu'>Train No." + trainNo + " is Not Available !</p1></div>");
+				pw.println("<div class='tab'><p1 class='menu'>Metro No." + trainNo + " is Not Available !</p1></div>");
 			}
 		} catch (Exception e) {
 			throw new TrainException(422, this.getClass().getName() + "_FAILED", e.getMessage());

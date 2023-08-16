@@ -46,12 +46,12 @@ public class AdminViewLinkFwd extends HttpServlet {
 						+ train.getTr_no() + "</td></tr>" + "<tr><td class='blue'>From Station :</td><td>"
 						+ train.getFrom_stn() + "</td></tr>" + "<tr><td class='blue'>To Station :</td><td>"
 						+ train.getTo_stn() + "</td></tr>" + "<tr><td class='blue'>Available Seats:</td><td>"
-						+ train.getSeats() + "</td></tr>" + "<tr><td class='blue'>Fare (INR) :</td><td>"
-						+ train.getFare() + " RS</td></tr>" + "</table>" + "</div>");
+						+ train.getSeats() + "</td></tr>" + "<tr><td class='blue'>Fare (BDT) :</td><td>"
+						+ train.getFare() + " TAKA</td></tr>" + "</table>" + "</div>");
 			} else {
 				RequestDispatcher rd = req.getRequestDispatcher("AdminSearchTrains.html");
 				rd.include(req, res);
-				pw.println("<div class='tab'><p1 class='menu'>Train No." + req.getParameter("trainnumber")
+				pw.println("<div class='tab'><p1 class='menu'>Metro No." + req.getParameter("trainnumber")
 						+ " is Not Available !</p1></div>");
 			}
 		} catch (Exception e) {

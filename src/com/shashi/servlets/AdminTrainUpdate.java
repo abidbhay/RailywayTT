@@ -38,7 +38,7 @@ public class AdminTrainUpdate extends HttpServlet {
 			if (train != null) {
 				RequestDispatcher rd = req.getRequestDispatcher("AdminHome.html");
 				rd.include(req, res);
-				pw.println("<div class='tab'>Train Schedule Update</div>");
+				pw.println("<div class='tab'>Metro Schedule Update</div>");
 				pw.println("<div class='tab'>" + "<table><form action='updatetrainschedule' method='post'>"
 						+ "<tr><td>Train No :</td><td><input type='text' name='trainno' value='" + train.getTr_no()
 						+ "'></td></tr>" + "<tr><td>Train Name :</td><td><input type='text' name='trainname' value='"
@@ -56,7 +56,7 @@ public class AdminTrainUpdate extends HttpServlet {
 			} else {
 				RequestDispatcher rd = req.getRequestDispatcher("AdminUpdateTrain.html");
 				rd.include(req, res);
-				pw.println("<div class='tab'>Train Not Available</div>");
+				pw.println("<div class='tab'>Metro Not Available</div>");
 			}
 		} catch (Exception e) {
 			throw new TrainException(422, this.getClass().getName() + "_FAILED", e.getMessage());
